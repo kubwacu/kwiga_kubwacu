@@ -12,12 +12,12 @@ class DocumentAPI{
             - generate_doc_title("2020-2021", "examen-uni", "Java mobile", "Informatique", null, "Université du lac tanganyika", 2) 
                 => "Java mobile - Examen pour faculté Info BAC2 à l'université du lac Tanganyika année academique 2020-2021"
             - generate_doc_title("2020-2021", "examen-uni", "PHP", "Info", "Genie logiciel", "Université du lac tanganyika", 3) 
-                => "PHP - Examen pour faculté Info-département Génie logiciel BAC2 à l'université du lac Tanganyika année academique 2020-2021"
+                => "PHP - Examen pour faculté Info-département Génie logiciel BAC3 à l'université du lac Tanganyika année academique 2020-2021"
         */
     }
-    public static function save_document($path, $year, $type, $cours, $section_fac, $departement, $university, $stage): void{}
-    public static function get_document($id): array{}
-    public static function get_last_added($nbr): array{}
+    public static function save_document($path, $year, $type, $cours, $section_fac, $departement, $university, $stage): void{} //question sur l'enregistrement
+    public static function get_document($id): array{} //Done. It is in Model file and is called "find($id)"
+    public static function get_last_added($nbr): array{} //Done It is in Model file and is called "findLastAdded($number)"
     public static function search($q): array{}
     public static function get_concours_9($edition=null): array{}
     public static function get_exetat($section=null, $session=null): array{}

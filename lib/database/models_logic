@@ -29,6 +29,7 @@ document(
   int downloads,
   int views,
 )
+
 document_issue(
   int id,
   int user_id,
