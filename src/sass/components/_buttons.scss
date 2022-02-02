@@ -1,0 +1,30 @@
+.btn{
+    padding: 10px;
+    background-color: $second_color;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-weight: 200;
+
+    // @include responsive-872{
+    //     font-size: $font15;
+    // }
+
+    &:hover{
+        transform: translate(5px, -5px);
+        box-shadow: -10px 10px 5px $gray_color;
+    }
+}
+.btn-1{
+    font-size: 14px;
+    
+    &:hover{
+        transform: translate(0, 0);
+        box-shadow: 0px 0px 0px transparent;
+        background-color: #fff;
+        border-color: $second_color;
+        color: $second_color;
+    }
+}
