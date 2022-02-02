@@ -1,0 +1,54 @@
+header{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px $page_margin;
+    height: 70px;
+
+    .arrow-left{
+        a{
+            color: $second_color;
+            font-size: $font15;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s all ease-in-out;
+
+            &:hover{
+                background-color: $gray_color;
+                color: $main_color;
+            }
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $main_color;
+
+        &__svg{
+            width: 50px;
+            height: 50px;
+        }
+        &__container{
+            display: flex;
+            align-items: center;
+        }
+        &__prefix{
+            position: relative;
+            left: -12px;
+            font-size: $font24;
+        }
+        &__suffix{
+            font-family: 'Kaushan Script', cursive;
+            font-size: $font24;
+            position: relative;
+            top: -2px;
+        }
+    }
+}

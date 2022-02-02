@@ -1,0 +1,112 @@
+@import '../main';
+
+$gray : #6c7c8b;
+$orange : #fd5308;
+$white : #ffffff;
+$shadow-box : #0000001a;
+$orange_linear :#e67342;
+$box_shadow_input:#00000033;
+$text :#07010100;
+$link_visited : #2606b483;
+
+h2{
+    color: $gray;
+    float: left;
+    margin-left: 50px;
+    padding-top: 5px;           
+}
+.icon{
+    width: 50px;
+    height: 20px;
+}
+.button{
+    width: 20%;
+    height: 40px;
+    margin-left: 450px;
+    background: linear-gradient(48deg, $orange, $orange_linear);
+    color: $white;
+    border: none;
+    border-radius: 150px;
+    font-size: 1.2rem;
+    box-shadow: 0 1px 10px $box_shadow_input;
+    cursor: pointer;
+    position: relative;
+
+}
+header{
+    .top-bar{
+        
+
+    }
+}
+form{
+    width: 100%;
+    height: 180px;
+    background-color: $gray;
+       
+    .search-section{
+        display: -ms-flexbox;
+        align-items: center;
+
+        input{
+        width: 50%;
+        height: 50px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        margin-left: 250px;
+        border: 1px solid transparent;
+        background: $white;
+        box-shadow: 0 1px 2px $shadow-box;
+        border-radius: 9px;
+        font-size: 1.1rem;
+        transition: 0.2s;        
+            & :focus{
+                border: 1px solid transparent;
+            }
+        }
+    }
+}
+main{
+    width: 100%;
+    height: 60vh;
+    
+    .added_documents{
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+        .button{
+            float: left;
+            margin-left: 50px;
+        }
+    }
+    .contribution_space{
+        @extend .added_documents;
+    }
+}
+footer{
+    .container{
+        width: 100%;
+        .description{
+            width: 600px;
+            float: left;
+            margin-left: 20px;
+            p{
+                display: inline;
+                line-height: 15px;
+                margin-right: 15px;
+                color: $text;
+                position: relative;        
+                a{
+                    text-decoration: none;
+                    & :visited{
+                        color: $link_visited;
+                    }
+                }    
+            }
+        }
+        .network{
+            margin-left: 1020px;
+
+        }   
+    }
+}
