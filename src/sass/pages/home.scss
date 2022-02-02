@@ -1,29 +1,5 @@
 @import '../main';
 
-
-h2{
-    float: left;
-    margin-left: 50px;
-    padding-top: 5px;          
-}
-.icon{
-    width: 50px;
-    height: 20px;
-}
-// .button{
-//     // width: 20%;
-//     // height: 40px;
-//     // margin-left: 450px;
-//     // background: linear-gradient(48deg, $orange, $orange_linear);
-//     // color: $white;
-//     // border: none;
-//     // border-radius: 150px;
-//     // font-size: 1.2rem;
-//     // box-shadow: 0 1px 10px $box_shadow_input;
-//     // cursor: pointer;
-//     // position: relative
-
-// }
 .search_section{
     background-color: #6c7c8b;
     margin-top: 70px;
@@ -56,19 +32,19 @@ h2{
     }
    
 }
-// main{
-    
-    
-//     .added_documents{
-//         width: 100%;
-//         height: 200px;
-//         display: inline-block;
-//         .button{
-//             float: left;
-//             margin-left: 50px;
-//         }
-//     }
-//     .contribution_space{
-//         @extend .added_documents;
-//     }
-// }
+main{
+    h3{
+        margin-top: 30px;
+    }
+    .btn_container{
+        margin-top: 20px;
+    }
+    .added_documents{
+        li{
+            margin-bottom: 10px;
+        }
+        a:hover{
+            border-bottom: 1px solid $main_color;
+        }
+    }
+}
