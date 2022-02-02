@@ -42,14 +42,19 @@ header{
         }
         &__prefix{
             position: relative;
-            left: -12px;
+            left: -14px;
             font-size: $font24;
+            top: 10px;
         }
         &__suffix{
             font-family: 'Kaushan Script', cursive;
-            font-size: $font24;
+            font-size: $font18;
             position: relative;
-            top: -2px;
+            left: -10px;
+        }
+        &__compl{
+            display: flex;
+            flex-direction: column;
         }
     }
 }
