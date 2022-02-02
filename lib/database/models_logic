@@ -1,0 +1,33 @@
+user(
+  int id, 
+  str first_name, 
+  str second_name, 
+  str username, 
+  text password, 
+  str email, 
+  datetime created_at, 
+  json social_links,
+  str type,  
+  boolean is_confirm, 
+  boolean in_team, 
+  boolean is_contributor
+)
+document(
+  int id, 
+  str title, 
+  str type, 
+  int year, 
+  str cours, 
+  datetime added_at, 
+  str path, 
+  int downloads,
+  int views,
+)
+document_issue(
+  int id,
+  int user_id,
+  int document_id,
+  str comment,
+  datetime add_at,
+  boolean is_solved,
+)
