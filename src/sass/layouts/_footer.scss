@@ -1,0 +1,30 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: $header_main_footer_margin;
+    padding-bottom: $header_main_footer_margin;
+
+    .network, .description{
+        display: flex;
+    }
+    .description{
+        li{
+            margin: 0 10px;
+        }
+        a{
+            transition: 0.2s all ease;
+
+            &:hover{
+                border-bottom: 1px solid $main_color;
+            }
+        }
+    }
+    .network{
+        i{
+            font-size: 16px;
+        }
+        li{
+            margin: 0 10px;
+        }
+    }
+}

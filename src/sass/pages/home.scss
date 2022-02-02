@@ -83,30 +83,3 @@ main{
         @extend .added_documents;
     }
 }
-footer{
-    .container{
-        width: 100%;
-        .description{
-            width: 600px;
-            float: left;
-            margin-left: 20px;
-            p{
-                display: inline;
-                line-height: 15px;
-                margin-right: 15px;
-                color: $text;
-                position: relative;        
-                a{
-                    text-decoration: none;
-                    & :visited{
-                        color: $link_visited;
-                    }
-                }    
-            }
-        }
-        .network{
-            margin-left: 1020px;
-
-        }   
-    }
-}

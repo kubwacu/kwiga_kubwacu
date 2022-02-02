@@ -14,6 +14,7 @@ li{
 
 a{
     text-decoration: none;
+    color: $main_color;
 }
 
 img{
@@ -22,4 +23,7 @@ img{
 }
 i{
     font-size: $font15;
+}
+header, footer{
+    padding: 0px $page_margin;
 }
