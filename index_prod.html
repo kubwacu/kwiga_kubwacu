@@ -23,20 +23,7 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <div class="arrow-left"><a href="https://www.Kubwacu.com/"><i class="fas fa-arrow-left"></i></a></div>
-            <div class= "logo">
-                <div class="logo__container">
-                    <div class="logo__svg"><img src="src/images/logo.svg" alt="Kubwacu logo"></div>
-                    <div class="logo__compl">
-                        <span class="logo__prefix">ubwacu</span>
-                        <span class="logo__suffix">wiga</span>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="nav-bar"><i class="fas fa-bars"></i></div>
-        </header>
+        <c-header></c-header>
         <div class="search_section">
             <form>
                 <input type="text" placeholder="Rechercher une epreuve ou un examen...">
@@ -99,5 +86,12 @@
             </ul>
         </footer>
     </div>
+    <script src="includes/header.js"></script>
+    <script src="includes/footer.js"></script>
+    <script>
+        const app = new Vue({
+            el: "#app"
+        })
+    </script>
 </body>
 </html>
