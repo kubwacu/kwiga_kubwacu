@@ -42,9 +42,10 @@ main{
     .added_documents{
         li{
             margin-bottom: 10px;
+            a:hover{
+                border-bottom: 1px solid $main_color;
+            }
         }
-        a:hover{
-            border-bottom: 1px solid $main_color;
-        }
+        
     }
 }
