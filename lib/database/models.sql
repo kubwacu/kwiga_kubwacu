@@ -5,9 +5,9 @@ create database kubwacu_twige;
 
 CREATE TABLE IF NOT EXISTS `documents` (
     `id` int(11) NOT NULL AUTO_INCREMENT,
-    `title` varchar(30) NOT NULL,
+    `title` varchar(30),
     `type` varchar(30) NOT NULL,
-    `year` int(11),
+    `year` int(11) NOT NULL,
     `cours` varchar(30) NOT NULL,
     `section` varchar(50),
     `university` varchar(100),
