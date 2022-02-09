@@ -22,11 +22,14 @@
     <meta name="description" content="Kubwacu est une entreprise burundaise qui conçoit et vend des logiciels et des applications pour les entreprise et pour les particuliers.">
     <style>
         .container{
-            position: absolute;
             padding: 20px 40px;
-            top: 20%;
+            margin: 5em auto;
             background: #f4f4f4;
+            max-width: 500px;
             z-index: -1;
+        }
+        .container h1{
+            margin: .5em 0 1.3em 0;
         }
         p{
             padding-left: 5px;
@@ -74,6 +77,55 @@
         #universityOp{
             display: none;
         }
+        footer{
+            background-color: #e74c3c;
+        }
+        @media (max-width:768px) {
+            .container{
+            padding: 10px 20px;
+            z-index: -1;
+            }
+            main, header, footer{
+            padding: 0px 20px;
+            }
+            footer{
+                flex-wrap: wrap;
+                padding-bottom: 8px;
+                background-color: #e74c3c;
+            }
+            footer .copyright{
+                padding: 10px;
+            }
+            footer .description{
+                flex-wrap: wrap;
+            }
+            footer li{
+                padding: 10px;
+            }
+        }
+        @media (max-width:300px) {
+            main, header, footer{
+            padding: 0px 5px;
+            }
+            *{
+                font-size: 14px;
+            }
+            h1{
+                font-size: 17px;
+            }
+            footer li{
+                padding: 5px;
+            }
+        }
+        @media (min-width:800px){
+            footer{
+                flex-wrap: wrap;
+                padding: 40px 15px;
+            }
+            footer .copyright{
+                padding-bottom: 30px ;
+            }
+        }
     </style>
 </head>
 <body>
@@ -82,49 +134,60 @@
         <main>
             <div class="container">
                 <h1>Enregistrement d'un document</h1>
-                <form>
-                    <p>Type d'épreuve: 
-                        <select name="type" id="type" onchange="showHideInput(this)">
+                <form id="form" method="post">
+                    <p> 
+                        <label for="type">Type d'épreuve:</label>
+                        <select name="type" id="type" onchange="showHideInput(this,'year')">
                             <option value="" selected>-select-</option>
                             <option value="concours-9">concours-9</option>
                             <option value="exetat">exetat</option>
-                            <option value="fexamen-uni">examen-uni</option>
+                            <option value="examen-uni">examen-uni</option>
                           </select>
                     </p>
                     <p>
-                        Cours: <input type="text" name="cours" id="cours">
+                        <label for="cours">Cours:</label> 
+                        <input type="text" name="cours" id="cours">
                         <small>Error message</small>
                     </p>
-                    <p>Année de passation: <select name="year" id="year"></select></p>
+                    <p>
+                        <label for="year">Année de passation:</label> 
+                        <select name="year" id="year"></select>
+                    </p>
                     <div id="exetatsOp">
                         <p>
-                            Section: <input type="text" name="section" id="section">
+                            <label for="section">Section:</label> 
+                            <input type="text" name="section" id="section">
                             <small>Error message</small>
                         </p>
                     </div>
                     <div id="universityOp">
                         <p>
-                            faculté: <input type="text" name="fac" id="fac">
+                            <label for="fac">faculté:</label>  
+                            <input type="text" name="fac" id="fac">
                             <small>Error message</small>
                         </p>
                         <p>
-                            Departement: <input type="text" name="departement" id="departement">
+                            <label for="departement">Departement:</label> 
+                            <input type="text" name="departement" id="departement">
                             <small>Error message</small>
                         </p>
                         <p>
-                            Université: <input type="text" name="université" id="université" placeholder="Université du Burundi">
+                            <label for="université">Université:</label> 
+                            <input type="text" name="université" id="université" placeholder="Université du Burundi">
                             <small>Error message</small> 
                         </p>
                         <p>
-                            Bac: <input type="number" name="stage" id="stage" placeholder="1">
+                            <label for="stage">Bac:</label>  
+                            <input type="number" name="stage" id="stage" placeholder="1">
                             <small>Error message</small> 
                         </p>
                     </div>
                     <p>
-                        Fichier :<input type="file" name="documentFile" id="documentFile">
+                        <label for="documentFile">Fichier :</label>
+                        <input type="file" name="documentFile" id="documentFile">
                         <small>Error message</small>
                     </p>
-                    <p><button type="submit" onclick="displayErrors()">Enregistrer</button></p>
+                    <p><button type="submit" id="submit">Enregistrer</button></p>
                 </form>
             </div>
         </main>
