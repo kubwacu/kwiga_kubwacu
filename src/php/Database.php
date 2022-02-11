@@ -8,12 +8,12 @@ class Database
      * Retourne une seule connexion à la base de donées
      */
     
-    private static $instance = null;
+    private $instance = null;
 
-    public static function getPdo(): PDO
+    public function getPdo(): PDO
     {
         $HOST= "localhost"; 
-        $DATABASE ="blogpoo"; 
+        $DATABASE ="kubwacu_twige"; 
         $USER = "root"; 
         $PASSWORD = "";
         if (self::$instance === null) {
